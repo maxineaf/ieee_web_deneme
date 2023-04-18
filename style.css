@@ -1,0 +1,22 @@
+#app ul li {
+    box-sizing: border-box;
+    margin: 50px;
+    font-size: 20px;
+    padding: 120px 20px 30px 20px;  
+    list-style-type: none;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
+    background-color: rgb(118, 248, 229);
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 25%;
+    overflow: auto;
+    font-family: sans-serif;
+}
+
+#app ul li:hover{
+    background-color: rgb(160, 224, 215);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
