@@ -1,22 +1,38 @@
-#app ul li {
+body ul li img{
+    
+    width: 100% !important;
+
+    max-height: 60%;
+    object-fit: fill;
+    margin-bottom: 20px;
+
+}
+
+body ul li span {
+    padding: 20px 0;
+    display: block;
+}
+
+body ul li{
     box-sizing: border-box;
     margin: 50px;
-    font-size: 20px;
-    padding: 120px 20px 30px 20px;  
+    font-size: 20px;  
     list-style-type: none;
     border-style: solid;
     border-width: 2px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
-    background-color: rgb(118, 248, 229);
+    background-color: rgb(255, 225, 255);
     display: inline-block;
     text-align: center;
-    height: 300px;
+    height: 400px;
     width: 25%;
     overflow: auto;
     font-family: sans-serif;
 }
 
-#app ul li:hover{
-    background-color: rgb(160, 224, 215);
+body ul li:hover{
+    background-color: rgb(238, 192, 223);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
+
+

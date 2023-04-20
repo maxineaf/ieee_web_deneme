@@ -14,11 +14,21 @@ function getProducts(){
         .then(response => response.json())
         .then(data => {
             const myul = document.createElement('ul');
-            myul.setAttribute('id', 'my_ul');
+          
+            //myimg.setAttribute('id', 'my_img'); //not important rn
 
             data.forEach(item => {
                 const myli = document.createElement('li');
-                myli.textContent = item.title;
+                const myimg = document.createElement('img');
+
+                myimg.src = item.image;
+
+                const myspan = document.createElement('span');
+                myspan.setAttribute('id', 'my_span');
+                myspan.textContent = item.title;
+
+                myli.appendChild(myimg);
+                myli.appendChild(myspan);
                 myul.appendChild(myli);
 
             });
